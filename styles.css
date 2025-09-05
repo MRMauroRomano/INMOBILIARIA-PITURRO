@@ -660,6 +660,10 @@ body {
   
 }
 
+.fa-check {
+  color: #28a745; /* Verde */
+}
+
 .stat {
   display: flex;
   align-items: center;
