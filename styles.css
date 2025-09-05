@@ -1914,18 +1914,21 @@ body {
     justify-content: center;
   }
 
-  .stat {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-size: 1.2rem;
-    color: #0d4e4d;
-  }
-
-  .stat i {
-  color: #28a745; /* verde para el tilde */
-  font-size: 1.5rem;
+ .stat {
+  display: flex;
+  align-items: center;   /* Alinea ícono y texto en la misma línea */
+  gap: 10px;             /* Espacio entre ícono y texto */
+  margin: 10px 0;
 }
+
+.stat i {
+  color: #28a745;        /* Verde */
+  font-size: 1.5rem;     /* Tamaño del ícono */
+  flex-shrink: 0;        /* Evita que el ícono se achique */
+}
+
+
+.fa-circle-check { color: #28a745; }
 
   
 
