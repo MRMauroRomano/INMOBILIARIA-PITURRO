@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Piturro - Propiedades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="./assets/images catalogo/LOGO INMOBILIARIA nuevo.png" alt="logoweb">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="propiedades.html" class="nav-link active">Propiedades</a></li>
+                        <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <ul>
+                    <li><a href="index.html" class="nav-link-mobile">Inicio</a></li>
+                    <li><a href="propiedades.html" class="nav-link-mobile">Propiedades</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link-mobile">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link-mobile">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Pestaña Propiedades -->
+        <div id="propiedades" class="tab-content active">
+            <section class="propiedades-tab">
+                <div class="container">
+                    <div class="propiedades-header">
+                        <h2>Nuestras Propiedades</h2>
+                        <p>Encuentra la propiedad perfecta para ti</p>
+                    </div>
+                    
+                    <!-- Filtros Avanzados -->
+                    <div class="filters-container">
+                        <div class="filters-row">
+                            <div class="filters">
+                                <button class="filter-btn active" data-filter="all">Todas</button>
+                                <button class="filter-btn" data-filter="casa">Casas</button>
+                                <button class="filter-btn" data-filter="apartamento">Departamentos</button>
+                                <button class="filter-btn" data-filter="local">Terrenos</button>
+                            </div>
+                            <div class="sort-filters">
+                                <select id="sortSelect" class="sort-select">
+                                    <option value="default">Ordenar por</option>
+                                    <option value="precio-asc">Precio: Menor a Mayor</option>
+                                    <option value="precio-desc">Precio: Mayor a Menor</option>
+                                    <option value="area-desc">Área: Mayor a Menor</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Agregando filtros avanzados por dormitorios, baños y características -->
+                        <div class="advanced-filters">
+                            <div class="filter-group">
+                                <label>Dormitorios:</label>
+                                <select id="dormitoriosFilter" class="filter-select">
+                                    <option value="">Cualquiera</option>
+                                    <option value="1">1 dormitorio</option>
+                                    <option value="2-3">2-3 dormitorios</option>
+                                    <option value="4-5">4-5 dormitorios</option>
+                                    <option value="5+">Más de 5 dormitorios</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label>Baños:</label>
+                                <select id="banosFilter" class="filter-select">
+                                    <option value="">Cualquiera</option>
+                                    <option value="1">1 baño</option>
+                                    <option value="2-3">2-3 baños</option>
+                                    <option value="4+">4 o más baños</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label>Características:</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="patioFilter" value="patio">
+                                        <span class="checkmark"></span>
+                                        Patio
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="balconFilter" value="balcon">
+                                        <span class="checkmark"></span>
+                                        Balcón
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="terrazaFilter" value="terraza">
+                                        <span class="checkmark"></span>
+                                        Terraza
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="garajeFilter" value="garaje">
+                                        <span class="checkmark"></span>
+                                        Garaje
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="cocheraFilter" value="cochera">
+                                        <span class="checkmark"></span>
+                                        Cochera
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="piscinaFilter" value="piscina">
+                                        <span class="checkmark"></span>
+                                        Piscina
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-actions">
+                                <button class="apply-filters-btn" onclick="aplicarFiltros()">
+                                    <i class="fas fa-filter"></i>
+                                    Aplicar Filtros
+                                </button>
+                                <button class="clear-filters-btn" onclick="limpiarFiltros()">
+                                    <i class="fas fa-times"></i>
+                                    Limpiar
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Buscar por ubicación, tipo o características..." class="search-input">
+                            <button class="search-btn" onclick="buscarPropiedades()">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="propiedades-grid" id="propiedadesGrid">
+                        <!-- Las propiedades se cargarán dinámicamente con JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal de Detalles de Propiedad (se mantiene en propiedades.html para la funcionalidad de ver detalles) -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="/placeholder.svg" alt="">
+                        <div class="image-nav">
+                            <button class="prev-btn" onclick="previousImage()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="next-btn" onclick="nextImage()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images" id="thumbnailImages">
+                        <!-- Thumbnails se cargarán dinámicamente -->
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="price-section">
+                        <div class="price" id="modalPrice"></div>
+                        <div class="location" id="modalLocation">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="property-details">
+                        <h3>Detalles de la Propiedad</h3>
+                        <div class="details-grid" id="modalDetails">
+                            <!-- Detalles se cargarán dinámicamente -->
+                        </div>
+                    </div>
+                    
+                    <div class="property-features">
+                        <h3>Características</h3>
+                        <div class="features-list" id="modalFeatures">
+                            <!-- Características se cargarán dinámicamente -->
+                        </div>
+                    </div>
+                    
+                    <div class="property-description">
+                        <h3>Descripción</h3>
+                        <p id="modalDescription"></p>
+                    </div>
+                    
+                    <div class="location-section">
+                        <h3>Ubicación</h3>
+                        <div class="location-link">
+                            <a id="locationLink" href="#" target="_blank" class="location-btn">
+                                <i class="fas fa-map-marked-alt"></i>
+                                Ver en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-section">
+                        <h3>¿Interesado en esta propiedad?</h3>
+                        <div class="contact-buttons">
+                            <!-- Agregando selector de números para contacto de propiedades -->
+                            <div class="phone-selector">
+                                <h4>Selecciona el número para contactar:</h4>
+                                <div class="phone-buttons-grid">
+                                    <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3537447777', 'Justiniano Posse')">
+                                        <i class="fas fa-phone"></i>
+                                        3537-447777 (Justiniano Posse)
+                                    </button>
+                                    <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3517562763', 'Córdoba Capital')">
+                                        <i class="fas fa-phone"></i>
+                                        351-7562763 (Córdoba Capital)
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="contact-btn secondary" onclick="agendarVisita()">
+                                <i class="fas fa-calendar"></i>
+                                Agendar Visita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                       <img src="./assets/images catalogo/LOGO INMOBILIARIA nuevo.png" alt="logoweb">
+                    </div>
+                    <p>Tu inmobiliaria de confianza </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/piturroinm/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InmoPlus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agregando botón flotante de WhatsApp -->
+    <div class="whatsapp-float" onclick="abrirWhatsApp()">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20whatsapp-B1qhrw9ac95t4FGlnlagYSCirtFP6p.png" alt="WhatsApp" class="whatsapp-icon">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

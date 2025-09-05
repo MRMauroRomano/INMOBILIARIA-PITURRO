@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Piturro - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="./assets/images catalogo/LOGO INMOBILIARIA nuevo.png" alt="logoweb">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="propiedades.html" class="nav-link">Propiedades</a></li>
+                        <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <ul>
+                    <li><a href="index.html" class="nav-link-mobile">Inicio</a></li>
+                    <li><a href="propiedades.html" class="nav-link-mobile">Propiedades</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link-mobile">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link-mobile">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Pestaña Contacto -->
+        <div id="contacto" class="tab-content active">
+            <section class="contacto-tab">
+                <div class="container">
+                    <h2>Contacto</h2>
+                    <div class="contacto-content">
+                        <div class="contacto-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Dirección</h4>
+                                    <p>Justiniano Posse - CÓRDOBA</p>
+                                    <p>Barrio Gral Paz - CÓRDOBA</p>
+
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <div class="phone-options">
+                                        <div class="phone-option">
+                                            <p>3537-447777 (JUSTINIANO POSSE)</p>
+                                            <button class="phone-btn" onclick="llamarTelefono('3537447777')">
+                                                <i class="fas fa-phone"></i> Llamar
+                                            </button>
+                                        </div>
+                                        <div class="phone-option">
+                                            <p>351-7562763 (CÓRDOBA CAPITAL)</p>
+                                            <button class="phone-btn" onclick="llamarTelefono('3517562763')">
+                                                <i class="fas fa-phone"></i> Llamar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>piturroinmobiliaria@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Horarios</h4>
+                                    <p>Lun - Vie: 9:00 AM - 6:00 PM<br>Sáb: 9:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contacto-form">
+                            <input type="text" placeholder="Nombre completo" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="tel" placeholder="Teléfono">
+                            <select required>
+                                <option value="">Tipo de consulta</option>
+                                <option value="compra">Quiero comprar</option>
+                                <option value="venta">Quiero vender</option>
+                                <option value="alquiler">Busco alquiler</option>
+                                <option value="inversion">Inversión</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <textarea placeholder="Mensaje" rows="5" required></textarea>
+                            <button type="submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                       <img src="./assets/images catalogo/LOGO INMOBILIARIA nuevo.png" alt="logoweb">
+                    </div>
+                    <p>Tu inmobiliaria de confianza </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/piturroinm/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inmobiliaria Piturro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agregando botón flotante de WhatsApp -->
+    <div class="whatsapp-float" onclick="abrirWhatsApp()">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20whatsapp-B1qhrw9ac95t4FGlnlagYSCirtFP6p.png" alt="WhatsApp" class="whatsapp-icon">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

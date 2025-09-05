@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Piturro - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="./assets/images catalogo/LOGO INMOBILIARIA nuevo.png" alt="logoweb">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                        <li><a href="propiedades.html" class="nav-link">Propiedades</a></li>
+                        <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <ul>
+                    <li><a href="index.html" class="nav-link-mobile">Inicio</a></li>
+                    <li><a href="propiedades.html" class="nav-link-mobile">Propiedades</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link-mobile">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link-mobile">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Pestaña Inicio con Hero y sección de Instagram -->
+        <div id="inicio" class="tab-content active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-image">
+                    <img src="assets/images catalogo/bannnerr.jpg" alt="Banner Principal">
+                </div>
+                <div class="hero-content">
+                    <h1>Encuentra tu hogar ideal</h1>
+                    <p>La mejor selección de propiedades en las mejores ubicaciones</p>
+                    <button class="cta-button" onclick="window.location.href='propiedades.html'">Ver Propiedades</button>
+                </div>
+            </section>
+
+            <!-- Propiedades Destacadas Section -->
+            <section class="propiedades-destacadas">
+                <div class="container">
+                    <h2>Propiedades Destacadas</h2>
+                    <p class="section-subtitle">Descubre nuestra selección de propiedades más populares</p>
+                    
+                    <div class="propiedades-grid-destacadas" id="propiedadesDestacadas">
+                        <!-- Las propiedades se cargarán dinámicamente con JavaScript -->
+                    </div>
+                    
+                    <div class="ver-mas-container">
+                        <button class="ver-mas-btn" onclick="window.location.href='propiedades.html'">
+                            Ver Todas las Propiedades
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nuevo banner "Queres vender tu propiedad" -->
+            <section class="vender-propiedad-banner">
+                <div class="container">
+                    <div class="vender-content">
+                        <h2>¿Querés vender tu propiedad?</h2>
+                        <p>Te ayudamos a encontrar el comprador ideal y a gestionar todo el proceso de venta de forma rápida y segura.</p>
+                        <button class="vender-btn" onclick="window.location.href='contacto.html'">
+                            Vender mi propiedad
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nueva sección de Instagram con título, subtítulo, botón y 4 reels -->
+            <section class="instagram-section-new">
+                <div class="container">
+                    <h2><i class="fab fa-instagram"></i> Seguinos en Instagram</h2>
+                    <p class="instagram-subtitle">Descubre nuestras propiedades destacadas y consejos inmobiliarios.</p>
+                    
+                    <div class="instagram-cta">
+                        <a href="https://www.instagram.com/piturroinm/" target="_blank" class="instagram-btn">
+                            <i class="fab fa-instagram"></i>
+                            @piturroinm
+                        </a>
+                    </div>
+
+                    <div class="reels-container">
+                        <div class="reel-item">
+                            <a href="https://www.instagram.com/reel/DHynE-NxIpy/?utm_source=ig_web_copy_link" target="_blank" class="reel-link">
+                                <video controls autoplay muted loop>
+                                    <source src="./videos instagram/reels/reels 1.mp4" type="video/mp4">
+                                    Tu navegador no soporta el elemento video.
+                                </video>
+                                <div class="reel-overlay">
+                                    <div class="reel-info">
+                                        <h4></h4>
+                                        <p></p>
+                                    </div>
+                                    <div class="instagram-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="reel-item">
+                            <a href="https://www.instagram.com/reel/SEGUNDO_REEL_ID/" target="_blank" class="reel-link">
+                                <video controls autoplay muted loop>
+                                    <source src="./videos instagram/reels/reels 2.mp4" type="video/mp4">
+                                    Tu navegador no soporta el elemento video.
+                                </video>
+                                <div class="reel-overlay">
+                                    <div class="reel-info">
+                                        <h4>Apartamento Centro</h4>
+                                        <p>Ubicación privilegiada</p>
+                                    </div>
+                                    <div class="instagram-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="reel-item">
+                            <a href="https://www.instagram.com/reel/TERCER_REEL_ID/" target="_blank" class="reel-link">
+                                <video controls autoplay muted loop>
+                                    <source src="./videos instagram/reels/reels 3.mp4" type="video/mp4">
+                                    Tu navegador no soporta el elemento video.
+                                </video>
+                                <div class="reel-overlay">
+                                    <div class="reel-info">
+                                        <h4>Tips de Inversión</h4>
+                                        <p>Consejos para invertir bien</p>
+                                    </div>
+                                    <div class="instagram-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="reel-item">
+                            <a href="https://www.instagram.com/reel/CUARTO_REEL_ID/" target="_blank" class="reel-link">
+                                <video controls autoplay muted loop>
+                                    <source src="./videos instagram/reels/reels 4.mp4" type="video/mp4">
+                                    Tu navegador no soporta el elemento video.
+                                </video>
+                                <div class="reel-overlay">
+                                    <div class="reel-info">
+                                        <h4>Casa con Piscina</h4>
+                                        <p>El hogar de tus sueños</p>
+                                    </div>
+                                    <div class="instagram-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal de Detalles de Propiedad (se mantiene en index.html ya que es una funcionalidad global) -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="/placeholder.svg" alt="">
+                        <div class="image-nav">
+                            <button class="prev-btn" onclick="previousImage()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="next-btn" onclick="nextImage()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images" id="thumbnailImages">
+                        <!-- Thumbnails se cargarán dinámicamente -->
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="price-section">
+                        <div class="price" id="modalPrice"></div>
+                        <div class="location" id="modalLocation">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="property-details">
+                        <h3>Detalles de la Propiedad</h3>
+                        <div class="details-grid" id="modalDetails">
+                            <!-- Detalles se cargarán dinámicamente -->
+                        </div>
+                    </div>
+                    
+                    <div class="property-features">
+                        <h3>Características</h3>
+                        <div class="features-list" id="modalFeatures">
+                            <!-- Características se cargarán dinámicamente -->
+                        </div>
+                    </div>
+                    
+                    <div class="property-description">
+                        <h3>Descripción</h3>
+                        <p id="modalDescription"></p>
+                    </div>
+                    
+                    <div class="location-section">
+                        <h3>Ubicación</h3>
+                        <div class="location-link">
+                            <a id="locationLink" href="#" target="_blank" class="location-btn">
+                                <i class="fas fa-map-marked-alt"></i>
+                                Ver en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-section">
+                        <h3>¿Interesado en esta propiedad?</h3>
+                        <div class="contact-buttons">
+                            <!-- Agregando selector de números para contacto de propiedades -->
+                            <div class="phone-selector">
+                                <h4>Selecciona el número para contactar:</h4>
+                                <div class="phone-buttons-grid">
+                                    <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3537447777', 'Justiniano Posse')">
+                                        <i class="fas fa-phone"></i>
+                                        3537-447777 (Justiniano Posse)
+                                    </button>
+                                    <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3517562763', 'Córdoba Capital')">
+                                        <i class="fas fa-phone"></i>
+                                        351-7562763 (Córdoba Capital)
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="contact-btn secondary" onclick="agendarVisita()">
+                                <i class="fas fa-calendar"></i>
+                                Agendar Visita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                       <img src="./assets/images catalogo/LOGO INMOBILIARIA nuevo.png" alt="logoweb">
+                    </div>
+                    <p>Tu inmobiliaria de confianza </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        
+                        <a href="https://www.instagram.com/piturroinm/" target="_blank"><i class="fab fa-instagram"></i></a>
+                
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Desarrollado por</h4>
+                    <div class="developer-info">
+                        <img src="./assets/images catalogo/LOGO MAURO.png" alt="Developer logo" class="developer-logo">
+                        <div class="developer-contact">
+                            <p><i class="fas fa-map-marker-alt"></i>Luque - Cba</p>
+                            <p><i class="fas fa-phone"></i>+54 9 3573-464991</p>
+                            <p><i class="fas fa-envelope"></i>mauroromano09@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InmoPlus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agregando botón flotante de WhatsApp -->
+    <div class="whatsapp-float" onclick="abrirWhatsApp()">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20whatsapp-B1qhrw9ac95t4FGlnlagYSCirtFP6p.png" alt="WhatsApp" class="whatsapp-icon">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
