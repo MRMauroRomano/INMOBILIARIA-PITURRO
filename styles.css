@@ -643,6 +643,13 @@ body {
   margin-bottom: 1rem;
 }
 
+.sobre-text h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
 .sobre-text p {
   margin-bottom: 1rem;
   color: #666;
@@ -652,12 +659,11 @@ body {
 .stats {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   font-weight: bold;
   gap: 0.6rem;
   font-size: 1.2rem;
   color: #0d4e4d;
-  
 }
 
 .fa-check {
@@ -670,7 +676,6 @@ body {
   gap: 0.6rem;
   font-size: 1.2rem;
   color: #0d4e4d;
-  
 }
 
 .stat i {
@@ -679,10 +684,10 @@ body {
 }
 
 .stat p {
-    display: flex;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 15px;
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .stat h3 {
@@ -709,63 +714,58 @@ body {
   font-size: 2.5rem;
   color: #0d4e4d;
   margin-top: 20px;
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .contacto-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  align-items: start;
 }
 
-.info-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.info-item i {
-  font-size: 1.5rem;
-  color: #0d4e4d;
-  margin-right: 1rem;
-  width: 30px;
-  flex-shrink: 0;
-}
-
-.info-item h4 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.info-item p {
-  color: #666;
+.contacto-info {
+  order: 1;
 }
 
 .contacto-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  order: 2;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contacto-form input,
-.contacto-form textarea {
+.contacto-form textarea,
+.contacto-form select {
   padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
   font-family: inherit;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus,
+.contacto-form select:focus {
+  outline: none;
+  border-color: #0d4e4d;
 }
 
 .contacto-form button {
-  background: #0d4e4d;
-  color: white;
-  border: none;
-  padding: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contacto-form button:hover {
-  background: #1ebe57;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Footer */
@@ -824,7 +824,7 @@ body {
   transition: all 0.3s ease;
   padding: 0.5rem;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 254, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1413,28 +1413,6 @@ body {
   background: #1ebe57;
 }
 
-/* Improved Sobre Nosotros and Contacto Tab Styles */
-.sobre-nosotros-tab,
-.contacto-tab {
-  padding: 2rem 0 4rem;
-  min-height: 100vh;
-}
-
-.contacto-tab h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #0d4e4d;
-}
-
-.contacto-form select {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-family: inherit;
-  background: white;
-}
-
 /* Modal Styles */
 .modal {
   display: none; /* This will be overridden by .modal.show */
@@ -1914,23 +1892,22 @@ body {
     justify-content: center;
   }
 
- .stat {
-  display: flex;
-  align-items: center;   /* Alinea ícono y texto en la misma línea */
-  gap: 10px;             /* Espacio entre ícono y texto */
-  margin: 10px 0;
-}
+  .stat {
+    display: flex;
+    align-items: center; /* Alinea ícono y texto en la misma línea */
+    gap: 10px; /* Espacio entre ícono y texto */
+    margin: 10px 0;
+  }
 
-.stat i {
-  color: #28a745;        /* Verde */
-  font-size: 1.5rem;     /* Tamaño del ícono */
-  flex-shrink: 0;        /* Evita que el ícono se achique */
-}
+  .stat i {
+    color: #28a745; /* Verde */
+    font-size: 1.5rem; /* Tamaño del ícono */
+    flex-shrink: 0; /* Evita que el ícono se achique */
+  }
 
-
-.fa-circle-check { color: #28a745; }
-
-  
+  .fa-circle-check {
+    color: #28a745;
+  }
 
   .stat p {
     font-size: 0.9rem;
@@ -2581,14 +2558,6 @@ body {
   border: 1px solid #e8f5e8;
 }
 
-.phone-selector h4 {
-  margin-bottom: 20px;
-  color: #2c5530;
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-}
-
 .phone-buttons-grid {
   display: flex;
   flex-direction: column;
@@ -2652,5 +2621,113 @@ body {
   .phone-selector h4 {
     font-size: 20px;
     margin-bottom: 25px;
+  }
+}
+
+/* Adding missing mobile responsive styles for sobre-nosotros and contacto sections */
+@media (max-width: 768px) {
+  /* Sobre Nosotros - Convert 2-column grid to 1-column */
+  .sobre-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .sobre-image {
+    order: -1; /* Move image above text on mobile */
+  }
+
+  .sobre-image img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Contacto - Convert 2-column grid to 1-column */
+  .contacto-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contacto-info {
+    order: 1;
+  }
+
+  .contacto-form {
+    order: 2;
+  }
+
+  .phone-option {
+    align-items: flex-start;
+  }
+
+  .phone-btn {
+    width: auto;
+    align-self: flex-start;
+  }
+}
+
+/* Extra small screens - additional mobile optimizations */
+@media (max-width: 480px) {
+  .sobre-text h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .contacto h2 {
+    font-size: 2rem;
+  }
+
+  .info-item {
+    padding: 1rem 0.8rem;
+  }
+
+  .contacto-form {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Adding more top spacing for desktop versions of sobre-nosotros and contacto sections */
+@media (min-width: 1025px) {
+  .sobre-nosotros {
+    padding: 12rem 0 4rem 0;
+  }
+
+  .contacto {
+    padding: 12rem 0 4rem 0;
+  }
+
+  .sobre-text h2,
+  .contacto h2 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .sobre-nosotros {
+    padding: 15rem 0 4rem 0;
+  }
+
+  .contacto {
+    padding: 15rem 0 4rem 0;
   }
 }
