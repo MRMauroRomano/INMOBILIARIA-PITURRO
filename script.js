@@ -175,6 +175,164 @@ const propiedades = [
     coordenadas: "-32.88190165376712, -62.6742641740995",
     numeroContacto: "3517562763",
   },
+   {
+    id: 11,
+    tipo: "terreno",
+    titulo: "Terreno en Venta",
+    precio: "USD $25,000",
+    ubicacion: "Av. La Tabalada, esq Jeremías Gutierrez - Justiniano Posse",
+    area: 300,
+    imagen: "./assets/images catalogo/TERRENO AV. LA TABLADA 1.jpg",
+    imagenes: ["./assets/images catalogo/TERRENO AV. LA TABLADA 1.jpg",
+      "./assets/images catalogo/TERRENO AV. LA TABLADA 2.jpg"
+    ],
+    caracteristicas: [
+      "Servicios",
+      "Escritura en mano",
+      
+    ],
+    descripcion: "Terreno ubicado en excelente ubicación, a metros de colectora",
+    coordenadas: "-32.889157, -62.670597",
+    numeroContacto: "3517562763",
+  },
+   {
+    id: 12,
+    tipo: "departamento",
+    titulo: "Departamento en Nva CBA",
+    precio: "USD $76,000",
+    ubicacion: "Ituzaingo 1129 - Nueva Córdoba ",
+    habitaciones: 1,
+    banos: 1,
+    area: 60,
+    imagen: "./assets/images catalogo/DEPTO ITUZAINGO 1129  7.jpg",
+    imagenes: ["./assets/images catalogo/DEPTO ITUZAINGO 1129  7.jpg",
+      "./assets/images catalogo/DEPTO ITUZAINGO 1129  4.jpg",
+      "./assets/images catalogo//DEPTO ITUZAINGO 1129  5.jpg ",
+      "./assets/images catalogo/DEPTO ITUZAINGO 1129 1.jpg",
+      "./assets/images catalogo//DEPTO ITUZAINGO 1129  2.jpg ",
+      "./assets/images catalogo//DEPTO ITUZAINGO 1129  3.jpg ",
+      "./assets/images catalogo/DEPTO ITUZAINGO 1129   6.jpg",
+    ],
+    caracteristicas: [
+      "Disposición : Frente",
+      "cocina",
+      "comedor amplio",
+      "balcón",
+      "Piso: 8",
+      "Antiguedad: 12 años.",
+      "Expensas: $100.000 aproximadamente"
+      
+
+      
+    ],
+    descripcion: "Departamento ubicado en Nva Cba, excelente ubicación a cuadras de Plaza España.",
+    coordenadas: "-31.429726568067284, -64.18665885866548",
+    numeroContacto: "3517562763",
+  },
+   {
+    id: 13,
+    tipo: "departamento",
+    titulo: "Departamento a Estrenar",
+    precio: "USD $85,000",
+    ubicacion: "Bv. Ocampos 100 Gral Paz - Córdoba Capital",
+    subtitulo: "ENTREGA JULIO 2026, EXCELENTE FINANCIACIÓN",
+    habitaciones: 1,
+    banos: 1,
+    area: 43,
+    imagen: "./assets/images catalogo/DEPTO PARA ESTRENAR 1.jpg",
+    imagenes: ["./assets/images catalogo/DEPTO PARA ESTRENAR 1.jpg",
+      "./assets/images catalogo/DEPTO PARA ESTRENAR 2.jpg",
+      "./assets/images catalogo/DEPTO PARA ESTRENAR 3.jpg",
+      "./assets/images catalogo/DEPTO PARA ESTRENAR 4.jpg",
+      "./assets/images catalogo/DEPTO PARA ESTRENAR 5.jpg",
+      "./assets/images catalogo/entorno dpto a estrenar 1.png",
+      "./assets/images catalogo/entorno dpto a estrenar 2.png",
+      "./assets/images catalogo/entorno dpto a estrenar 3.png"
+    ],
+    caracteristicas: [
+      "Disposición : Contra Frente",
+      "cocina",
+      "comedor",
+      "balcón",
+      "Piso: 4",
+      "Amenities",
+      "ENTREGA JULIO 2026",
+      "EXCELENTE FINANCIACIÓN"
+      
+
+      
+    ],
+    descripcion: "Departamento ubicado en barrio Gral Paz, excelente ubicación a metros del Centro Cívico.",
+    coordenadas: "-31.416834864638158, -64.17250744551347",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 14,
+    tipo: "terreno",
+    titulo: "Terreno En Venta",
+    precio: "USD $65,000",
+    ubicacion: "Belgrano 683 - Justiniano Posse",
+    area: 825,
+    imagen: "./assets/images catalogo/terreno belgrano 683 1.jpg",
+    imagenes: ["./assets/images catalogo/terreno belgrano 683 1.jpg",
+      "./assets/images catalogo/terreno belgrano 683 2.jpg"
+    ],
+    caracteristicas: [
+      "Servicios",
+      "Escritura en mano",
+      
+    ],
+    descripcion: "Terreno ubicado en excelente ubicación, a metros de plaza central",
+    coordenadas: "-32.88665373812455, -62.68128829447729",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 15,
+    tipo: "terreno",
+    titulo: "Terreno En Venta",
+    precio: "USD $48,000",
+    ubicacion: "Av La Tablada, esq Presidente Roca - Justiniano Posse",
+    area: 600,
+    imagen: "./assets/images catalogo/terreno av la tablada pte roca 1.jpg",
+    imagenes: ["./assets/images catalogo/terreno av la tablada pte roca 1.jpg",
+      
+    ],
+    caracteristicas: [
+      "Servicios",
+      "Escritura en mano",
+      
+    ],
+    descripcion: "Terreno ubicado en excelente ubicación, a metros de colectora",
+    coordenadas: "-32.88857835408099, -62.673272726309015",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 16,
+    tipo: "terreno",
+    titulo: "Terrenos En Venta",
+    precio: "USD $50,000 C/U",
+    ubicacion: "Rául Alfonsin, Juan Manuel de Rosas - Justiniano Posse",
+    area: 0,
+    imagen: "./assets/images catalogo/terrenos x3 1.jpg",
+    imagenes: ["./assets/images catalogo/terrenos x3 1.jpg",
+               "./assets/images catalogo/terrenos x3 2.jpg",
+               "./assets/images catalogo/terrenos x3 3.jpg",
+               "./assets/images catalogo//terrenox3 4.png"
+      
+    ],
+    caracteristicas: [
+      "Servicios",
+      "Escritura en mano",
+      "3 Terrenos"
+      
+    ],
+    descripcion: "Lote dividido en 3, ubicado en una zona muy tranquila, a metros de rotonda principal y colectora",
+    coordenadas: "-32.89130986133661, -62.671676080807444",
+    numeroContacto: "3517562763",
+  },
 ]
 
 // Variables globales
