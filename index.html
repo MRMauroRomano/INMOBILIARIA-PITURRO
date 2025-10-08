@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria Piturro - Inicio</title>
+     <!-- Favicon -->
+    <link rel="icon" href="https://www.piturroinmobiliaria.com/assets/images%20catalogo/LOGO%20INMOBILIARIA%20nuevo.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+ <!-- Datos estructurados para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Inmobiliaria Piturro",
+      "url": "https://www.piturroinmobiliaria.com",
+      "logo": "https://www.piturroinmobiliaria.com/assets/images%20catalogo/LOGO%20INMOBILIARIA%20nuevo.png",
+      "sameAs": [
+        "https://www.instagram.com/piturroinm/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+54 9 3537-447777",
+        "contactType": "customer service",
+        "areaServed": "AR",
+        "availableLanguage": "Spanish"
+      }
+    }
+    </script>
+
    
 
 </head>
@@ -66,23 +89,31 @@
             </section>
 
             <!-- Propiedades Destacadas Section -->
-            <section class="propiedades-destacadas">
-                <div class="container">
-                    <h2>Propiedades Destacadas</h2>
-                    <p class="section-subtitle">Descubre nuestra selección de propiedades más populares</p>
-                    
-                    <div class="propiedades-grid-destacadas" id="propiedadesDestacadas">
-                        <!-- Las propiedades se cargarán dinámicamente con JavaScript -->
-                    </div>
-                    
-                    <div class="ver-mas-container">
-                        <button class="ver-mas-btn" onclick="window.location.href='propiedades.html'">
-                            Ver Todas las Propiedades
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
+<section class="propiedades-destacadas">
+    <div class="container">
+
+        <!-- Título con ícono centrado -->
+        <div class="titulo-con-icono">
+            <i class="fas fa-home"></i>
+            <h2>Propiedades Destacadas</h2>
+            <p class="section-subtitle">Descubre nuestra selección de propiedades más populares</p>
+        </div>
+
+        <!-- Contenedor de propiedades destacadas -->
+        <div class="propiedades-grid-destacadas" id="propiedadesDestacadas">
+            <!-- Las propiedades se cargarán dinámicamente con JavaScript -->
+        </div>
+
+        <!-- Botón Ver más -->
+        <div class="ver-mas-container">
+            <button class="ver-mas-btn" onclick="window.location.href='propiedades.html'">
+                Ver Todas las Propiedades
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </div>
+</section>
 
             <!-- Nuevo banner "Queres vender tu propiedad" -->
             <section class="vender-propiedad-banner">

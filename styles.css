@@ -85,6 +85,24 @@ body {
   background: #0c8040;
 }
 
+  .titulo-con-icono {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .titulo-con-icono i {
+        font-size: 40px;
+        color: #007f5f;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .titulo-con-icono h2 {
+        margin: 0;
+        font-size: 28px;
+        color: #004b40;
+    }
+
 /* Mobile Menu Button */
 .mobile-menu-btn {
   display: none;
@@ -2730,4 +2748,49 @@ body {
   .contacto {
     padding: 15rem 0 4rem 0;
   }
+}
+
+
+/* ==== ESTILO PARA PROPIEDADES VENDIDAS ==== */
+.propiedad-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.sold-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.sold-overlay span {
+  background: rgba(255, 255, 255, 0.95);
+  color: #b91c1c;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.propiedad-card.sold .sold-overlay {
+  opacity: 1;
+}
+
+.propiedad-card.sold .sold-overlay span {
+  transform: translateY(0);
+}
+
+.propiedad-card.sold .ver-mas-btn {
+  background-color: #ccc !important;
+  cursor: not-allowed;
 }

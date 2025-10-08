@@ -33,6 +33,7 @@ const propiedades = [
       "Casa familiar ideal para pareja o matrimonio. Cuenta con amplio patio con asador y múltiples áreas de entretenimiento.",
     coordenadas: "-32.88194246342032, -62.68138995360713",
     numeroContacto: "3573447777",
+    vendido: true,
   },
   {
     id: 3,
@@ -228,6 +229,7 @@ const propiedades = [
     descripcion: "Departamento ubicado en Nva Cba, excelente ubicación a cuadras de Plaza España.",
     coordenadas: "-31.429726568067284, -64.18665885866548",
     numeroContacto: "3517562763",
+    vendido: true,
   },
    {
     id: 13,
@@ -333,6 +335,113 @@ const propiedades = [
     coordenadas: "-32.89130986133661, -62.671676080807444",
     numeroContacto: "3517562763",
   },
+
+  {
+    id: 17,
+    tipo: "departamento",
+    titulo: "Departamento En Venta Gral Paz",
+    precio: "USD $93,000",
+    ubicacion: "Lima 1600 Gral Paz - Córdoba Capital",
+    habitaciones: 2,
+    banos: 2,
+    area: 85,
+    imagen: "./assets/images catalogo/depto-gral-paz-1.jpg",
+    imagenes: ["./assets/images catalogo/depto-gral-paz-1.jpg",
+      "./assets/images catalogo/dpto-gral-paz-2.jpg",
+      "./assets/images catalogo/dpto-gral-paz-3.jpg",
+      "./assets/images catalogo/dpto-gral-paz-4.jpg",
+      
+    ],
+    caracteristicas: [
+      "Disposición : Contra Frente",
+      "cocina",
+      "comedor",
+      "balcón con asador",
+      "Caldera",
+      "Dormitorios con placard",
+      "Condición de Inmueble A Estrenar",
+      
+
+      
+    ],
+    descripcion: "Piturro Inmobiliaria te presenta el siguiente inmueble ubicado sobre calle Lima esquina General Deheza, en uno de los barrios mas cotizados de la ciudad de Cordoba. Cuenta con 2 dormitorios con placares, baño de servicio, ante baño y baño principal, caldera, cocina amoblada y balcón con asador propio. El edificio posee terraza con quincho de uso común. Bajas expensas!!",
+    coordenadas: "-31.411466178872896, -64.16262228944578",
+    numeroContacto: "3517562763",
+  },
+
+   {
+    id: 18,
+    tipo: "departamento",
+    titulo: "Departamento En Venta B° Jardín",
+    precio: "USD $47,000",
+    ubicacion: "Rimini 829 Bº Jardín Hipodromo - Córdoba Capital",
+    habitaciones: 2,
+    banos: 1,
+    area: 65,
+    imagen: "./assets/images catalogo/depto-1.jpg",
+    imagenes: ["./assets/images catalogo/depto-1.jpg",
+     "./assets/images catalogo/depto-2.jpg",
+     "./assets/images catalogo/depto-3.jpg",
+     "./assets/images catalogo/depto-4.jpg",
+     "./assets/images catalogo/depto 5.jpg",
+     "./assets/images catalogo/depto 6.jpg",
+     "./assets/images catalogo/depto 7.jpg",
+    ],
+    caracteristicas: [
+      "Disposición : Contra Frente",
+      "cocina",
+      "comedor",
+      "living",
+      "lavadero",
+      "Condición de Inmueble Excelente"
+      
+      
+      
+
+      
+    ],
+    descripcion: "Piturro Inmobiliaria te presenta el este hermoso departamento ubicado sobre calle Rimini 829, a metros de Circunvalación y Shopping Paseo del Jockey. El mismo posee acceso por escalera y cuenta con 2 dormitorios, baño completo, living, comedor y cocina integrada con lavadero. Excelente oportunidad de inversión!!!! Apto Crédito Hipotecario!!!!",
+    coordenadas: "-31.458249101349594, -64.18860924637161",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 19,
+    tipo: "departamento",
+    titulo: "Departamento En Venta B° Gral Paz",
+    precio: "USD $63,000",
+    ubicacion: "Jacinto Ríos 299 Bº Gral Paz  - Córdoba Capital",
+    habitaciones: 2,
+    banos: 1,
+    area: 28,
+    imagen: "./assets/images catalogo/dpto 1.jpg",
+    imagenes: ["./assets/images catalogo/dpto 1.jpg",
+     "./assets/images catalogo/dpto 2.jpg",
+     "./assets/images catalogo/dpto 3.jpg",
+     "./assets/images catalogo/dpto 4.jpg",
+     "./assets/images catalogo/dpto 5.jpg",
+     "./assets/images catalogo/dpto 6.jpg",
+     "./assets/images catalogo/dpto 7.jpg",
+     "./assets/images catalogo/dpto 8.jpg",
+    ],
+    caracteristicas: [
+      "Antigüedad: 20 años",
+      "Disposición :  Frente",
+      "cocina",
+      "Gran espacio",
+      "Condición de Inmueble Excelente",
+      "Dormitorios con placares",
+      "Blacon al frente",
+      
+      
+      
+
+      
+    ],
+    descripcion: "PITURRO INMOBILIARIA TE PRESENTA EL SIGUIENTE INMUEBLE UBICADO SOBRE CALLA JACINTO RIOS ESQUINA LIMA, BARRIO GENERAL PAZ. A METROS DE CLINICA UNIVERSITARIA REINA FABIOLA, COLEGIO PIAS, HIPER LIBERTAD. EL MISMO CUENTA CON 2 DORMITORIOS CON PLACARES EMPOTRADOS, BAÑO COMPLETO. BALCON. COCINA SEPARADA CON MUEBLES BAJO MESADA Y ALACENAS. ACCESO POR ESCALERA. BAJAS EXPENSAS.",
+    coordenadas: "-31.412666117893544, -64.1664110182815",
+    numeroContacto: "3517562763",
+  }
 ]
 
 // Variables globales
@@ -447,14 +556,19 @@ function loadProperties() {
   })
 }
 
-// Crear card de propiedad
+// Crear card de propiedad con cartel "VENDIDO"
 function createPropertyCard(propiedad) {
-  const card = document.createElement("div")
-  card.className = "propiedad-card"
-  card.setAttribute("data-tipo", propiedad.tipo)
+  const card = document.createElement("div");
+  card.className = "propiedad-card";
+  card.setAttribute("data-tipo", propiedad.tipo);
+
+  // Si la propiedad está vendida, agregamos una clase especial
+  if (propiedad.vendido) card.classList.add("sold");
 
   card.innerHTML = `
-        <div class="propiedad-image" style="background-image: url('${propiedad.imagen}')"></div>
+        <div class="propiedad-image" style="background-image: url('${propiedad.imagen}')">
+            ${propiedad.vendido ? `<div class="sold-overlay"><span>VENDIDO</span></div>` : ""}
+        </div>
         <div class="propiedad-info">
             <div class="propiedad-precio">${propiedad.precio}</div>
             <h3 class="propiedad-titulo">${propiedad.titulo}</h3>
@@ -486,14 +600,17 @@ function createPropertyCard(propiedad) {
                     ${propiedad.caracteristicas.join(", ")}
                 </div>
             </div>
-            <button class="ver-mas-btn" onclick="verDetalles(${propiedad.id})">
-                Ver Detalles
+            <button class="ver-mas-btn" onclick="verDetalles(${propiedad.id})" ${
+              propiedad.vendido ? "disabled" : ""
+            }>
+                ${propiedad.vendido ? "Vendido" : "Ver Detalles"}
             </button>
         </div>
-    `
+    `;
 
-  return card
+  return card;
 }
+
 
 // Ver detalles de propiedad
 function verDetalles(id) {
