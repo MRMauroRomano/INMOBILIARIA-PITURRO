@@ -33,7 +33,7 @@ const propiedades = [
       "Casa familiar ideal para pareja o matrimonio. Cuenta con amplio patio con asador y múltiples áreas de entretenimiento.",
     coordenadas: "-32.88194246342032, -62.68138995360713",
     numeroContacto: "3573447777",
-    vendido: true,
+    vendida: true,
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const propiedades = [
     id: 4,
     tipo: "casa",
     titulo: "Casa Familiar con Garage",
-    precio: "USD $37.000",
+    precio: "USD $34.000",
     ubicacion: "Dean Funes 631, Justiniano Posse",
     habitaciones: 1,
     banos: 1,
@@ -276,9 +276,11 @@ const propiedades = [
     precio: "USD $65,000",
     ubicacion: "Belgrano 683 - Justiniano Posse",
     area: 825,
-    imagen: "./assets/images catalogo/terreno belgrano 683 1.jpg",
-    imagenes: ["./assets/images catalogo/terreno belgrano 683 1.jpg",
-      "./assets/images catalogo/terreno belgrano 683 2.jpg"
+    imagen: "./assets/images catalogo/terreno 65mil.jpg",
+    imagenes: ["./assets/images catalogo/terreno 65mil.jpg",
+      "./assets/images catalogo/terreno65mil 2.jpg",
+      "./assets/images catalogo/terreno65mil 3.jpg",
+      "./assets/images catalogo/terreno65mil4.jpg"
     ],
     caracteristicas: [
       "Servicios",
@@ -367,6 +369,7 @@ const propiedades = [
     descripcion: "Piturro Inmobiliaria te presenta el siguiente inmueble ubicado sobre calle Lima esquina General Deheza, en uno de los barrios mas cotizados de la ciudad de Cordoba. Cuenta con 2 dormitorios con placares, baño de servicio, ante baño y baño principal, caldera, cocina amoblada y balcón con asador propio. El edificio posee terraza con quincho de uso común. Bajas expensas!!",
     coordenadas: "-31.411466178872896, -64.16262228944578",
     numeroContacto: "3517562763",
+    vendido:true
   },
 
    {
@@ -441,7 +444,143 @@ const propiedades = [
     descripcion: "PITURRO INMOBILIARIA TE PRESENTA EL SIGUIENTE INMUEBLE UBICADO SOBRE CALLA JACINTO RIOS ESQUINA LIMA, BARRIO GENERAL PAZ. A METROS DE CLINICA UNIVERSITARIA REINA FABIOLA, COLEGIO PIAS, HIPER LIBERTAD. EL MISMO CUENTA CON 2 DORMITORIOS CON PLACARES EMPOTRADOS, BAÑO COMPLETO. BALCON. COCINA SEPARADA CON MUEBLES BAJO MESADA Y ALACENAS. ACCESO POR ESCALERA. BAJAS EXPENSAS.",
     coordenadas: "-31.412666117893544, -64.1664110182815",
     numeroContacto: "3517562763",
-  }
+  },
+
+  {
+    id: 20,
+    tipo: "casa",
+    titulo: "Casa Familiar",
+    precio: "USD $49,000",
+    ubicacion: "Pasaje 1 De Marzo de 1911, Justiniano Posse",
+    habitaciones: 3,
+    banos: 1,
+    area: 269,
+    imagen: "./assets/images catalogo/casa pasaje.jpg",
+    imagenes: ["./assets/images catalogo/casa pasaje.jpg"],
+    caracteristicas: [
+      "patio",
+      "cocina",
+      "comedor",
+      "garaje",
+      "living",
+      "lavadero",
+    ],
+    descripcion: "Casa familiar con amplio patio, excelente ubicación, Ideal para familia grande. Superficie cubierta 92m2",
+    coordenadas: "-32.88296197479276, -62.685182418274145",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 21,
+    tipo: "casa",
+    titulo: "Casa Familiar con Amplio Patio",
+    precio: "USD $120,000",
+    ubicacion: "Av. Tablada 747, Justiniano Posse",
+    habitaciones: 2,
+    banos: 1,
+    area: 606,
+    imagen: "./assets/images catalogo/casa tablada.jpg",
+    imagenes: ["./assets/images catalogo/casa tablada.jpg"],
+    caracteristicas: [
+      "patio",
+      "cocina",
+      "comedor",
+      "garaje",
+      "living",
+      "lavadero",
+    ],
+    descripcion: "Casa familiar con amplio patio, excelente ubicación, Ideal para familia grande. Superficie cubierta 129m2",
+    coordenadas: "-32.887279160325534, -62.67917131827413",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 22,
+    tipo: "terreno",
+    titulo: "Terreno en Venta Ubicado en Zona Industrial",
+    precio: "USD $50,000 C/U",
+    ubicacion: "Boulevard Colón - Justiniano Posse",
+    area: 1000,
+    imagen: "./assets/images catalogo/terreno colon 1.jpg",
+    imagenes: ["./assets/images catalogo/terreno colon 1.jpg",
+      "./assets/images catalogo/terreno colon 2.jpg",
+      "./assets/images catalogo/terreno colon 3.jpg",
+      "./assets/images catalogo/terreno colon 4.jpg",
+      "./assets/images catalogo/terreno colon 5.jpg",
+
+      
+    ],
+    caracteristicas: [
+      "Alumbrado Público",
+      "20 metros de frente",
+      "50 metros de fondo"
+      
+    ],
+    descripcion: "Terreno ubicado en zona industrial, rodeados de grandes empresas, cuenta con alumbrado público",
+    coordenadas: "-32.877015865281216, -62.676068290541664",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 23,
+    tipo: "locales",
+    titulo: "Local + Cochera ideal para tu Emprendimiento",
+    precio: "USD $40,000",
+    ubicacion: "9 de Julio 246, Córdoba Capital",
+    habitaciones: 0,
+    banos: 0,
+    area: 26,
+    imagen: "./assets/images catalogo/local-comercial-1.jpg",
+    imagenes: ["./assets/images catalogo/local-comercial-1.jpg",
+      "./assets/images catalogo/local-comercial-2.jpg",
+      "./assets/images catalogo/local-comercial-3.jpg",
+      "./assets/images catalogo/local-comercial-4.jpg",
+      "./assets/images catalogo/local-comercial-5.jpg",
+    ],
+    caracteristicas: [
+      "Antigüedad: Nuevo",
+      "A Estrenar: No",
+      "Cobertura Cocheras: Cubierta",
+      "Vigilancia: Sí",
+   
+     "COCHERA SOBRE CALLE BELGRANO 33. LA MISMA CUENTA CON ASCENSOR PARA EL TRASLADO DEL VEHICULO. PRECIO: U$13000.",
+     "LOCAL COMERCIAL SOBRE CALLE 9 DE JULIO, GALERIA SHOPPING CENTER PLANETA. MEDIDAS 3,5M DE FRENTE X 3,5M DE FONDO. U$35000."
+
+    ],
+    descripcion: "Casa familiar con amplio patio, excelente ubicación, Ideal para familia grande. Superficie cubierta 129m2",
+    coordenadas: "-31.413797673669844, -64.18703114046383",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 24,
+    tipo: "cochera",
+    titulo: "Cochera Cubierta en venta",
+    precio: "USD $16,000",
+    ubicacion: "Catamarca 1655 B° Gral Paz, Córdoba Capital",
+    habitaciones: 0,
+    banos: 0,
+    area: 18,
+    imagen: "./assets/images catalogo/cochera-grpal-paz-1.jpg",
+    imagenes: ["./assets/images catalogo/cochera-grpal-paz-1.jpg",
+      "./assets/images catalogo/cochera-grpal-paz-2.jpg",
+      "./assets/images catalogo/cochera-grpal-paz-3.jpg",
+      "./assets/images catalogo/cochera-grpal-paz-4.jpg",
+    ],
+    caracteristicas: [
+   "Antigüedad: Nuevo",
+   "A Estrenar: Sí",
+   "Cobertura Cocheras: Cubierta",
+   "Superficie Total m2: 18",
+   "Vigilancia: Sí",
+   "Baulera: Sí",
+   "Propiedad Ocupada: No"
+
+    ],
+    descripcion: "Excelente cochera en edificio de categoría. Cuenta con escritura.",
+    coordenadas: "-31.413797673669844, -64.18703114046383",
+    numeroContacto: "3517562763",
+  },
 ]
 
 // Variables globales
@@ -556,60 +695,68 @@ function loadProperties() {
   })
 }
 
-// Crear card de propiedad con cartel "VENDIDO"
+// Crear card de propiedad con cartel "VENDIDO" o "VENDIDA" según tipo
 function createPropertyCard(propiedad) {
   const card = document.createElement("div");
   card.className = "propiedad-card";
   card.setAttribute("data-tipo", propiedad.tipo);
 
-  // Si la propiedad está vendida, agregamos una clase especial
-  if (propiedad.vendido) card.classList.add("sold");
+  // Verificar si está marcada como vendida/o
+  const estaVendida = propiedad.vendido || propiedad.vendida;
+
+  // Texto dinámico según el tipo de propiedad
+  const textoVendido =
+    propiedad.tipo === "casa" ? "VENDIDA" : "VENDIDO";
+
+  // Agregar clase si está vendida/o
+  if (estaVendida) card.classList.add("sold");
 
   card.innerHTML = `
-        <div class="propiedad-image" style="background-image: url('${propiedad.imagen}')">
-            ${propiedad.vendido ? `<div class="sold-overlay"><span>VENDIDO</span></div>` : ""}
+    <div class="propiedad-image" style="background-image: url('${propiedad.imagen}')">
+        ${estaVendida ? `<div class="sold-overlay"><span>${textoVendido}</span></div>` : ""}
+    </div>
+    <div class="propiedad-info">
+        <div class="propiedad-precio">${propiedad.precio}</div>
+        <h3 class="propiedad-titulo">${propiedad.titulo}</h3>
+        <div class="propiedad-ubicacion">
+            <i class="fas fa-map-marker-alt"></i>
+            ${propiedad.ubicacion}
         </div>
-        <div class="propiedad-info">
-            <div class="propiedad-precio">${propiedad.precio}</div>
-            <h3 class="propiedad-titulo">${propiedad.titulo}</h3>
-            <div class="propiedad-ubicacion">
-                <i class="fas fa-map-marker-alt"></i>
-                ${propiedad.ubicacion}
+        <div class="propiedad-detalles">
+            ${
+              propiedad.habitaciones > 0
+                ? `
+                <div class="detalle">
+                    <i class="fas fa-bed"></i>
+                    ${propiedad.habitaciones} hab
+                </div>
+            `
+                : ""
+            }
+            <div class="detalle">
+                <i class="fas fa-bath"></i>
+                ${propiedad.banos} baños
             </div>
-            <div class="propiedad-detalles">
-                ${
-                  propiedad.habitaciones > 0
-                    ? `
-                    <div class="detalle">
-                        <i class="fas fa-bed"></i>
-                        ${propiedad.habitaciones} hab
-                    </div>
-                `
-                    : ""
-                }
-                <div class="detalle">
-                    <i class="fas fa-bath"></i>
-                    ${propiedad.banos} baños
-                </div>
-                <div class="detalle">
-                    <i class="fas fa-ruler-combined"></i>
-                    ${propiedad.area} m²
-                </div>
-                <div class="detalle">
-                    <i class="fas fa-check"></i>
-                    ${propiedad.caracteristicas.join(", ")}
-                </div>
+            <div class="detalle">
+                <i class="fas fa-ruler-combined"></i>
+                ${propiedad.area} m²
             </div>
-            <button class="ver-mas-btn" onclick="verDetalles(${propiedad.id})" ${
-              propiedad.vendido ? "disabled" : ""
-            }>
-                ${propiedad.vendido ? "Vendido" : "Ver Detalles"}
-            </button>
+            <div class="detalle">
+                <i class="fas fa-check"></i>
+                ${propiedad.caracteristicas.join(", ")}
+            </div>
         </div>
-    `;
+        <button class="ver-mas-btn" onclick="verDetalles(${propiedad.id})" ${
+          estaVendida ? "disabled" : ""
+        }>
+            ${estaVendida ? textoVendido : "Ver Detalles"}
+        </button>
+    </div>
+  `;
 
   return card;
 }
+
 
 
 // Ver detalles de propiedad
