@@ -498,7 +498,7 @@ const propiedades = [
     id: 22,
     tipo: "terreno",
     titulo: "Terreno en Venta Ubicado en Zona Industrial",
-    precio: "USD $50,000 C/U",
+    precio: "USD $35,000",
     ubicacion: "Boulevard Colón - Justiniano Posse",
     area: 1000,
     imagen: "./assets/images catalogo/terreno colon 1.jpg",
@@ -524,15 +524,15 @@ const propiedades = [
   {
     id: 23,
     tipo: "locales",
-    titulo: "Local + Cochera ideal para tu Emprendimiento",
-    precio: "USD $40,000",
+    titulo: "Local Comercial ideal para tu Emprendimiento",
+    precio: "USD $28,000",
     ubicacion: "9 de Julio 246, Córdoba Capital",
     habitaciones: 0,
     banos: 0,
     area: 26,
     imagen: "./assets/images catalogo/local-comercial-1.jpg",
     imagenes: ["./assets/images catalogo/local-comercial-1.jpg",
-      "./assets/images catalogo/local-comercial-2.jpg",
+      
       "./assets/images catalogo/local-comercial-3.jpg",
       "./assets/images catalogo/local-comercial-4.jpg",
       "./assets/images catalogo/local-comercial-5.jpg",
@@ -543,11 +543,11 @@ const propiedades = [
       "Cobertura Cocheras: Cubierta",
       "Vigilancia: Sí",
    
-     "COCHERA SOBRE CALLE BELGRANO 33. LA MISMA CUENTA CON ASCENSOR PARA EL TRASLADO DEL VEHICULO. PRECIO: U$13000.",
-     "LOCAL COMERCIAL SOBRE CALLE 9 DE JULIO, GALERIA SHOPPING CENTER PLANETA. MEDIDAS 3,5M DE FRENTE X 3,5M DE FONDO. U$35000."
+    
+     
 
     ],
-    descripcion: "Casa familiar con amplio patio, excelente ubicación, Ideal para familia grande. Superficie cubierta 129m2",
+    descripcion: "LOCAL COMERCIAL SOBRE CALLE 9 DE JULIO, GALERIA SHOPPING CENTER PLANETA. MEDIDAS 3,5M DE FRENTE X 3,5M DE FONDO",
     coordenadas: "-31.413797673669844, -64.18703114046383",
     numeroContacto: "3517562763",
   },
@@ -581,6 +581,106 @@ const propiedades = [
     coordenadas: "-31.413797673669844, -64.18703114046383",
     numeroContacto: "3517562763",
   },
+
+  {
+    id: 25,
+    tipo: "cochera",
+    titulo: "Cochera Cerrada Excelente Ubicación",
+    precio: "USD $13,000",
+    ubicacion: "Belgrano 33, Córdoba Capital",
+    habitaciones: 0,
+    banos: 0,
+    area: 0,
+    imagen: "./assets/images catalogo/local-comercial-2.jpg",
+    imagenes: ["./assets/images catalogo/local-comercial-2.jpg",
+      
+      "./assets/images catalogo/local-comercial-3.jpg",
+      
+    ],
+    caracteristicas: [
+      "Ascensor para Vehículo",
+      "Cobertura Cocheras: Cubierta",
+      "Vigilancia: Sí",
+   
+     
+    
+
+    ],
+    descripcion: "COCHERA SOBRE CALLE BELGRANO 33. LA MISMA CUENTA CON ASCENSOR PARA EL TRASLADO DEL VEHICULO",
+    coordenadas: "-31.415165395630133, -64.18818979018226",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 26,
+    tipo: "terreno",
+    titulo: "Lotes en Venta Potrero de Garay",
+    precio: "USD $18,000",
+    ubicacion: "Potrero de Garay - Córdoba",
+    habitaciones: 0,
+    banos: 0,
+    area: 1000,
+    imagen: "./assets/images catalogo/inmuebles-terreno-venta-5504980-9d94559f-1eae-46ed-9334-1c6f622ac8c4.jpg",
+    imagenes: ["./assets/images catalogo/inmuebles-terreno-venta-5504980-9d94559f-1eae-46ed-9334-1c6f622ac8c4.jpg",
+      "./assets/images catalogo/inmuebles-terreno-venta-5504980-5bbb9dae-d904-4713-82ee-dd1553bc1530.jpg",
+      "./assets/images catalogo/inmuebles-terreno-venta-5504980-d066a1b2-2975-4253-accf-9d919406c83b.jpg",
+      "./assets/images catalogo/inmuebles-terreno-venta-5504980-f4e3674d-b90c-49f1-a7f5-ac9e145cff6e.jpg",
+      
+     
+      
+    ],
+    caracteristicas: [
+   "Antigüedad: Nuevo",
+  "Superficie Total m2: 1000",
+   "Propiedad Ocupada: No",
+   "Agua Potable",
+   "Energía Eléctrica"
+   
+     
+    
+
+    ],
+    descripcion: "LOCALIZADO EN UNA ZONA TRANQUILA Y CON GRANDES VISTAS. CUENTA CONX50), SERVICIOS DE AGUA POTABLE Y ENERGIA ELECTRICA. POSEE ESCRITURA.",
+    coordenadas: "-31.795630666818777, -64.56263033580471",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 27,
+    tipo: "terreno",
+    titulo: "Lotes en Venta Barrio Privado",
+    precio: "USD $18,000",
+    ubicacion: "Potrero de Garay, camino a San Clemente.",
+    habitaciones: 0,
+    banos: 0,
+    area: 3000,
+    imagen: "./assets/images catalogo/terreno 1.jpg",
+    imagenes: [ "./assets/images catalogo/terreno 1.jpg",
+      "./assets/images catalogo/terreno 2.jpg",
+      "./assets/images catalogo/terreno 3.jpg",
+      "./assets/images catalogo/terreno 4.jpg",
+      "./assets/images catalogo/terreno 5.jpg",
+      
+     
+      
+    ],
+    caracteristicas: [
+   "Barrio: Privado.",
+   "Expensas: economicas.",
+   "Servicios: Energía eléctrica, agua potable, seguridad 24hs.",
+   "Amenities: Restaurant, piscina, etc."
+   
+     
+    
+
+    ],
+    descripcion: "LOCALIZADO EN UNA ZONA TRANQUILA Y CON GRANDES VISTAS.",
+    coordenadas: "-31.7862402425419, -64.63093937863773",
+    numeroContacto: "3517562763",
+  },
+
+
+
 ]
 
 // Variables globales
