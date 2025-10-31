@@ -1375,3 +1375,20 @@ ${mensaje}`
   const whatsappUrl = `https://wa.me/54${numeroWhatsApp}?text=${encodeURIComponent(mensajeWhatsApp)}`
   window.open(whatsappUrl, "_blank")
 }
+
+// Detecta si el sitio se abre dentro del navegador de Instagram o Facebook
+(function() {
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+  const isInstagram = ua.includes("Instagram");
+  const isFacebook = ua.includes("FBAN") || ua.includes("FBAV");
+
+  if (isInstagram || isFacebook) {
+    // Para evitar recargar infinitamente, solo lo hace una vez
+    if (!window.location.href.includes("refresh")) {
+      const separator = window.location.href.includes("?") ? "&" : "?";
+      window.location.href = window.location.href + separator + "refresh=" + new Date().getTime();
+    }
+  }
+})();
+
