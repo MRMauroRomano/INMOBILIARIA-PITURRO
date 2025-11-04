@@ -679,6 +679,71 @@ const propiedades = [
     numeroContacto: "3517562763",
   },
 
+  {
+    id: 28,
+    tipo: "casa",
+    titulo: "Casa con Amplio Patio",
+    precio: "USD $60,000",
+    ubicacion: "Güemess 1455, Luque",
+    habitaciones: 1,
+    banos: 1,
+    area: 250,
+    imagen: "./assets/images catalogo/luque casa 5.jpg",
+    imagenes: ["./assets/images catalogo/luque casa 5.jpg",
+      "./assets/images catalogo/luque casa 8.jpg",
+      "./assets/images catalogo/luque casa 9.jpg",
+      "./assets/images catalogo/luque casa 7.jpg",
+      "./assets/images catalogo/luque casa 4.jpg",
+      "./assets/images catalogo/luque casa 3.jpg",
+      "./assets/images catalogo/luque casa 6.jpg",
+      "./assets/images catalogo/luque casa 2.jpg",
+      "./assets/images catalogo/luque casa 1.jpg",
+     
+    ],
+    caracteristicas: [
+      "patio",
+      "cocina",
+      "comedor",
+      "garaje",
+      "lavadero",
+    ],
+    descripcion: "Casa familiar con amplio patio, excelente ubicación, Superficie cubierta 82m2",
+    coordenadas: "-31.65077680879449, -63.337585092310206",
+    numeroContacto: "3517562763",
+  },
+
+  {
+    id: 29,
+    tipo: "departamento",
+    titulo: "Departamento En Nueva Córdoba",
+    precio: "USD $110,000",
+    ubicacion: "Pueyrredón 85 - Córdoba Capital",
+    habitaciones: 2,
+    banos: 1,
+    area: 68,
+    imagen: "./assets/images catalogo/dpto cba comedor.jpg",
+    imagenes: ["./assets/images catalogo/dpto cba comedor.jpg",
+     "./assets/images catalogo/dpto cba cocina.jpg",
+     "./assets/images catalogo/dpto cba hab 1.jpg",
+     "./assets/images catalogo/dpto cba hab 2.jpg",
+     "./assets/images catalogo/dpto cba baño.jpg",
+     "./assets/images catalogo/dpto cba balcon 2.jpg",
+     "./assets/images catalogo/dpto cba pasillo.jpg",
+     "./assets/images catalogo/dpto cba comedor.jpg",
+     
+    ],
+    caracteristicas: [
+      "Primer piso",
+      "cocina",
+      "comedor",
+      "balcón",
+      
+    ],
+    descripcion: "Departamento en venta excelente ubicación",
+    coordenadas: "-31.426878023686175, -64.19013656565582",
+    numeroContacto: "3517562763",
+  },
+
 
 
 ]
