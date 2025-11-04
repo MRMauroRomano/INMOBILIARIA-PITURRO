@@ -230,29 +230,44 @@
                         </div>
                     </div>
                     
-                    <div class="contact-section">
-                        <h3>¿Interesado en esta propiedad?</h3>
-                        <div class="contact-buttons">
-                            <!-- Agregando selector de números para contacto de propiedades -->
-                            <div class="phone-selector">
-                                <h4>Selecciona el número para contactar:</h4>
-                                <div class="phone-buttons-grid">
-                                    <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3537447777', 'Justiniano Posse')">
-                                        <i class="fas fa-phone"></i>
-                                        3537-447777 (Justiniano Posse)
-                                    </button>
-                                    <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3517562763', 'Córdoba Capital')">
-                                        <i class="fas fa-phone"></i>
-                                        351-7562763 (Córdoba Capital)
-                                    </button>
-                                </div>
-                            </div>
-                            <button class="contact-btn secondary" onclick="agendarVisita()">
-                                <i class="fas fa-calendar"></i>
-                                Agendar Visita
-                            </button>
-                        </div>
-                    </div>
+    <div class="contact-section">
+  <h3>¿Interesado en esta propiedad?</h3>
+  <div class="contact-buttons">
+    <div class="phone-selector">
+      <h4>Selecciona el número para contactar:</h4>
+      <div class="phone-buttons-grid">
+        <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3537447777', 'Justiniano Posse')">
+          <i class="fas fa-phone"></i>
+          3537-447777 (Justiniano Posse)
+        </button>
+        <button class="contact-btn primary" onclick="contactarPropiedadConNumero('3517562763', 'Córdoba Capital')">
+          <i class="fas fa-phone"></i>
+          351-7562763 (Córdoba Capital)
+        </button>
+      </div>
+    </div>
+
+    <button class="contact-btn secondary" onclick="agendarVisita()">
+      <i class="fas fa-calendar"></i>
+      Agendar Visita
+    </button>
+
+    <!-- 🔽 BOTÓN DE COMPARTIR -->
+    <button class="contact-btn share-btn" onclick="compartirPropiedad()">
+      <i class="fas fa-share-alt"></i>
+      Compartir Propiedad
+    </button>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>

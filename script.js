@@ -1456,4 +1456,29 @@ ${mensaje}`
     }
   }
 })();
+function compartirPropiedad() {
+  if (!currentProperty) return;
+
+  // 🔗 Genera el enlace directo a la propiedad actual
+  const link = `${window.location.origin}${window.location.pathname}?propiedad=${currentProperty.id}`;
+
+  // 📱 Si el dispositivo permite compartir (celulares)
+  if (navigator.share) {
+    navigator.share({
+      title: currentProperty.titulo,
+      text: `Mirá esta propiedad: ${currentProperty.titulo} (${currentProperty.precio})`,
+      url: link,
+    }).catch((error) => console.log("Error al compartir:", error));
+  } 
+  // 💻 Si está en una computadora, copia el enlace
+  else {
+    navigator.clipboard.writeText(link)
+      .then(() => {
+        alert("📋 Enlace copiado al portapapeles");
+      })
+      .catch(() => {
+        alert("No se pudo copiar el enlace. Copialo manualmente:\n" + link);
+      });
+  }
+}
 
