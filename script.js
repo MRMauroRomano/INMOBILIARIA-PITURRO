@@ -769,17 +769,34 @@ function initializeApp() {
   if (currentPage === "index.html" || currentPage === "") {
     loadFeaturedProperties()
     setupModalControls() // Asegúrate de que el modal funcione en la página de inicio
+
   } else if (currentPage === "propiedades.html") {
     setupPropertyFilters()
     setupAdvancedFilters()
     loadProperties()
+
+    // 🆕 Si la URL contiene ?propiedad=, abrir esa propiedad automáticamente
+    const urlParams = new URLSearchParams(window.location.search)
+    const propiedadId = urlParams.get("propiedad")
+
+    if (propiedadId) {
+      setTimeout(() => {
+        const propiedad = propiedades.find(p => p.id == propiedadId)
+        if (propiedad) {
+          verDetalles(propiedad.id) // 👈 Esta función abre el modal
+        }
+      }, 800)
+    }
+
     setupSearchAndSort()
     setupModalControls() // El modal también es necesario en propiedades.html
+
   } else if (currentPage === "contacto.html") {
     setupContactForm()
   }
   // No hay inicialización específica para sobre-nosotros.html aparte del menú
 }
+
 
 // Configuración del menú móvil
 function setupMobileMenu() {
